@@ -7,15 +7,7 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-   
-    return f"My name is {name} and I am {age} years old."
-
-# Example
-name = "Walter"
-age = 38
-result = format_string(name, age)
-print(result)
-pass
+    pass
 
 def conditional_check(number):
     """
@@ -25,18 +17,7 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    if number > 10:
-        return "Greater"
-    elif number < 10:
-        return "Lesser"
-    else:
-        return "Equal"
-
-# Example
-number = 4
-result = conditional_check(number)
-print(result)
-pass
+    pass
 
 def loop_sum(n):
     """
@@ -46,16 +27,7 @@ def loop_sum(n):
     Returns:
         int: Sum of numbers
     """
-    total = 0
-    for i in range(1, n+1):
-        total += i
-    return total
-
-# Example
-n = 12
-result = loop_sum(n)
-print(result)
-pass
+    pass
 
 def list_operations(numbers):
     """
@@ -65,17 +37,7 @@ def list_operations(numbers):
     Returns:
         tuple: (sum, max, min)
     """
-    total = sum(numbers)
-    maximum = max(numbers)
-    minimum = min(numbers)
-    return (total, maximum, minimum)
-
-# Example
-numbers = [1,4,6,8,10]
-result = list_operations(numbers)
-print(result)
-
-pass
+    pass
 
 def dict_operations(students_dict):
     """
@@ -85,15 +47,7 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    students_dict = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 } 
-    
-    return [name for name, score in students_dict.items() if score > 80]
-
-# Example
-list1 = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 }
-print(dict_operations(list1))
-
-pass
+    pass
 
 def set_operations(list1, list2):
     """
@@ -104,17 +58,7 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    list1 = [1, 2, 3, 4, 5]
-    list2 = [4, 5, 6, 7, 8]
-    return set(list1) & set(list2)
-
-# Example
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
-result = set_operations(list1, list2)
-print(result)
-
-pass
+    pass
 
 def arithmetic_ops(a, b):
     """
@@ -125,19 +69,7 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    add = a + b
-    subtract = a - b
-    multiply = a * b
-    divide = a / b
-    return {"add": add, "subtract": subtract, "multiply": multiply, "divide": divide}
-
-# Example 
-a = 25
-b = 8
-result = arithmetic_ops(a, b)
-print(result)
-
-pass
+    pass
 
 def logical_ops(x, y):
     """
@@ -148,17 +80,7 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    x = True
-    y = False
-    return {"and": x and y, "or": x or y, "not x": not x, "not y": not y}
-
-# Example
-x= True
-y= False
-result = logical_ops(x, y)
-print(result)
-
-pass
+    pass
 
 def bitwise_ops(a, b):
     """
