@@ -102,13 +102,13 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    list1 = [1, 2]
-    list2 = [3, 4]
+    list1 = [1, 2, 3]
+    list2 = [2, 3, 4]
     return set(list1) & set(list2)
 
 # Example
-list1 = [1, 2]
-list2 = [3, 4]
+list1 = [1, 2, 3]
+list2 = [2, 3, 4]
 result = set_operations(list1, list2)
 print(result)
 pass
