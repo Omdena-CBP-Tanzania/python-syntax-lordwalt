@@ -8,7 +8,7 @@ def format_string(name, age):
         str: Formatted string
     """
     
-    return f"My name is {name} and I am {age} years old."
+    return f"My name is {name} and I am {age} years old"
 
 # Example
 name = "Alice"
@@ -102,13 +102,13 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    list1 = [1, 2, 3, 4, 5]
-    list2 = [4, 5, 6, 7, 8]
+    list1 = [1, 2, 3]
+    list2 = [3, 2, 4]
     return set(list1) & set(list2)
 
 # Example
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
 result = set_operations(list1, list2)
 print(result)
 pass
@@ -122,11 +122,11 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    add = a + b
-    subtract = a - b
-    multiply = a * b
-    divide = a / b
-    return {"add": add, "subtract": subtract, "multiply": multiply, "divide": divide}
+    sum = a + b
+    difference = a - b
+    product = a * b
+    quotient = a / b
+    return {"sum": sum, "difference": difference, "product": product, "quotient": quotient}
 
 # Example 
 a = 10
@@ -146,7 +146,7 @@ def logical_ops(x, y):
     """
     x = True
     y = False
-    return {"and": x and y, "or": x or y, "not x": not x}
+    return {"and": x and y, "or": x or y, "not_x": not x}
 
 # Example
 x= True
