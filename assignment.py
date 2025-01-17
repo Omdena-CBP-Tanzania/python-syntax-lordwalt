@@ -12,7 +12,7 @@ def format_string(name, age):
 
 # Example
 name = "Alice"
-age = 24
+age = 30
 result = format_string(name, age)
 print(result)
 pass
@@ -33,7 +33,7 @@ def conditional_check(number):
         return "Equal"
 
 # Example
-number = 12
+number = 5
 result = conditional_check(number)
 print(result)
 pass
@@ -84,12 +84,12 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    students_dict = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 }
+    students_dict = { "John" : 85, "Alice" : 90, "Bob" : 75, "Eve" : 95,}
     
     return [name for name, score in students_dict.items() if score > 80]
 
 # Example
-list1 = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 }
+list1 = { "John" : 85, "Alice" : 90, "Bob" : 75, "Eve" : 95 }
 print(dict_operations(list1))
 pass
 
@@ -129,8 +129,8 @@ def arithmetic_ops(a, b):
     return {"add": add, "subtract": subtract, "multiply": multiply, "divide": divide}
 
 # Example 
-a = 25
-b = 8
+a = 10
+b = 5
 result = arithmetic_ops(a, b)
 print(result)
 pass
@@ -146,7 +146,7 @@ def logical_ops(x, y):
     """
     x = True
     y = False
-    return {"and": x and y, "or": x or y, "not x": not x, "not y": not y}
+    return {"and": x and y, "or": x or y, "not x": not x}
 
 # Example
 x= True
@@ -164,13 +164,13 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    a = 10
-    b = 4
-    return {"and": a & b, "or": a | b, "xor": a ^ b, "left shift": a << 2, "right shift": a >> 2}
+    a = 12
+    b = 10
+    return {"and": a & b, "or": a | b, "xor": a ^ b}
 
 # Example
-a = 10
-b = 4
+a = 12
+b = 10
 result = bitwise_ops(a, b)
 print(result)
 pass
