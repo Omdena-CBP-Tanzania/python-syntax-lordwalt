@@ -7,12 +7,12 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-   
+    
     return f"My name is {name} and I am {age} years old."
 
 # Example
-name = "Walter"
-age = 38
+name = "Alice"
+age = 24
 result = format_string(name, age)
 print(result)
 pass
@@ -33,7 +33,7 @@ def conditional_check(number):
         return "Equal"
 
 # Example
-number = 4
+number = 12
 result = conditional_check(number)
 print(result)
 pass
@@ -52,7 +52,7 @@ def loop_sum(n):
     return total
 
 # Example
-n = 12
+n = 10
 result = loop_sum(n)
 print(result)
 pass
@@ -71,10 +71,9 @@ def list_operations(numbers):
     return (total, maximum, minimum)
 
 # Example
-numbers = [1,4,6,8,10]
+numbers = [1, 2, 3, 4, 5]
 result = list_operations(numbers)
 print(result)
-
 pass
 
 def dict_operations(students_dict):
@@ -85,14 +84,13 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    students_dict = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 } 
+    students_dict = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 }
     
     return [name for name, score in students_dict.items() if score > 80]
 
 # Example
 list1 = { "John" : 95, "Alan" : 77, "Steven" : 87, "Janet" : 91, "Suzan" : 80 }
 print(dict_operations(list1))
-
 pass
 
 def set_operations(list1, list2):
@@ -113,7 +111,6 @@ list1 = [1, 2, 3, 4, 5]
 list2 = [4, 5, 6, 7, 8]
 result = set_operations(list1, list2)
 print(result)
-
 pass
 
 def arithmetic_ops(a, b):
@@ -136,7 +133,6 @@ a = 25
 b = 8
 result = arithmetic_ops(a, b)
 print(result)
-
 pass
 
 def logical_ops(x, y):
@@ -157,7 +153,6 @@ x= True
 y= False
 result = logical_ops(x, y)
 print(result)
-
 pass
 
 def bitwise_ops(a, b):
@@ -169,4 +164,13 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    pass
+    a = 10
+    b = 4
+    return {"and": a & b, "or": a | b, "xor": a ^ b, "left shift": a << 2, "right shift": a >> 2}
+
+# Example
+a = 10
+b = 4
+result = bitwise_ops(a, b)
+print(result)
+pass
